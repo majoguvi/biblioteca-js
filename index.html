@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biblioteca JS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <!-- Encabezado -->
+        <header class="encabezado">
+
+            <h1>Mi Biblioteca</h1>
+
+            <p>
+                Encuentra tu próxima historia favorita
+            </p>
+
+        </header>
+
+
+        <!-- Contenido principal -->
+        <main>
+
+            <!-- Nombre del usuario -->
+            <section class="seccion">
+
+                <h2>Datos del usuario</h2>
+
+                <label for="nombre">
+                    ¿Cuál es tu nombre?
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Escribe tu nombre"
+                >
+
+            </section>
+
+
+            <!-- Libros disponibles -->
+            <section class="seccion">
+
+                <div class="titulo-libros">
+
+                    <div>
+                        <h2>Libros disponibles</h2>
+
+                        <p>
+                            Selecciona los libros que deseas solicitar
+                        </p>
+                    </div>
+
+                    <span id="contador">
+                        0 seleccionados
+                    </span>
+
+                </div>
+
+
+                <div class="libros">
+
+
+                    <!-- Libro 1 -->
+                    <label class="libro">
+
+                        <input
+                            type="checkbox"
+                            class="libro-checkbox"
+                            value="El Principito"
+                        >
+
+                        <div class="informacion-libro">
+
+                            <div>
+                                <h3>
+                                    El Principito
+                                </h3>
+
+                                <p>
+                                    Antoine de Saint-Exupéry
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                    <!-- Libro 2 -->
+                    <label class="libro">
+
+                        <input
+                            type="checkbox"
+                            class="libro-checkbox"
+                            value="Cien años de soledad"
+                        >
+
+                        <div class="informacion-libro">
+
+                            <div>
+                                <h3>
+                                    Cien años de soledad
+                                </h3>
+
+                                <p>
+                                    Gabriel García Márquez
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                    <!-- Libro 3 -->
+                    <label class="libro">
+
+                        <input
+                            type="checkbox"
+                            class="libro-checkbox"
+                            value="La Odisea"
+                        >
+
+                        <div class="informacion-libro">
+                            <div>
+                                <h3>
+                                    La Odisea
+                                </h3>
+
+                                <p>
+                                    Homero
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                    <!-- Libro 4 -->
+                    <label class="libro">
+
+                        <input
+                            type="checkbox"
+                            class="libro-checkbox"
+                            value="Romeo y Julieta"
+                        >
+
+                        <div class="informacion-libro">
+
+                            <div>
+                                <h3>
+                                    Romeo y Julieta
+                                </h3>
+
+                                <p>
+                                    William Shakespeare
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                    <!-- Libro 5 -->
+                    <label class="libro">
+
+                        <input
+                            type="checkbox"
+                            class="libro-checkbox"
+                            value="Coraline"
+                        >
+
+                        <div class="informacion-libro">
+
+                            <div>
+                                <h3>
+                                    Coraline
+                                </h3>
+
+                                <p>
+                                    Neil Gaiman
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                    <!-- Libro 6 -->
+                    <label class="libro">
+
+                        <input
+                            type="checkbox"
+                            class="libro-checkbox"
+                            value="Alicia en el País de las Maravillas"
+                        >
+
+                        <div class="informacion-libro">
+
+                            <div>
+                                <h3>
+                                    Alicia en el País de las Maravillas
+                                </h3>
+
+                                <p>
+                                    Lewis Carroll
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                    <!-- Libro 7 -->
+                    <label class="libro">
+
+                        <input
+                            type="checkbox"
+                            class="libro-checkbox"
+                            value="Los juegos del hambre"
+                        >
+
+                        <div class="informacion-libro">
+                            <div>
+                                <h3>
+                                    Los juegos del hambre
+                                </h3>
+
+                                <p>
+                                    Suzanne Collins
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- Botón -->
+            <button id="botonSolicitar">
+                Solicitar libros
+            </button>
+
+
+            <!-- Resultado -->
+            <section
+                id="resultado-container"
+                class="resultado oculto"
+            >
+
+                <h2>
+                    ¡Solicitud realizada!
+                </h2>
+
+                <p id="mensaje"></p>
+
+                <h3>
+                    Información de la solicitud
+                </h3>
+
+                <div id="resultado"></div>
+
+            </section>
+
+        </main>
+
+
+        <!-- Pie de página -->
+        <footer>
+
+            <p>
+                Biblioteca JS
+            </p>
+
+            <p>
+                Tu espacio para descubrir nuevas historias
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
