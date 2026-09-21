@@ -7,7 +7,8 @@
 
     <title>Biblioteca JS</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -17,6 +18,10 @@
         <!-- Encabezado -->
         <header class="encabezado">
 
+            <div class="icono-biblioteca">
+                📚
+            </div>
+
             <h1>Mi Biblioteca</h1>
 
             <p>
@@ -25,11 +30,9 @@
 
         </header>
 
-
-        <!-- Contenido principal -->
         <main>
 
-            <!-- Nombre del usuario -->
+            <!-- Datos del usuario -->
             <section class="seccion">
 
                 <h2>Datos del usuario</h2>
@@ -46,18 +49,19 @@
 
             </section>
 
-
             <!-- Libros disponibles -->
             <section class="seccion">
 
                 <div class="titulo-libros">
 
                     <div>
+
                         <h2>Libros disponibles</h2>
 
                         <p>
                             Selecciona los libros que deseas solicitar
                         </p>
+
                     </div>
 
                     <span id="contador">
@@ -66,9 +70,7 @@
 
                 </div>
 
-
                 <div class="libros">
-
 
                     <!-- Libro 1 -->
                     <label class="libro">
@@ -81,20 +83,18 @@
 
                         <div class="informacion-libro">
 
-                            <div>
-                                <h3>
-                                    El Principito
-                                </h3>
+                            <div class="portada">
+                                📖
+                            </div>
 
-                                <p>
-                                    Antoine de Saint-Exupéry
-                                </p>
+                            <div>
+                                <h3>El Principito</h3>
+                                <p>Antoine de Saint-Exupéry</p>
                             </div>
 
                         </div>
 
                     </label>
-
 
                     <!-- Libro 2 -->
                     <label class="libro">
@@ -107,20 +107,18 @@
 
                         <div class="informacion-libro">
 
-                            <div>
-                                <h3>
-                                    Cien años de soledad
-                                </h3>
+                            <div class="portada">
+                                📖
+                            </div>
 
-                                <p>
-                                    Gabriel García Márquez
-                                </p>
+                            <div>
+                                <h3>Cien años de soledad</h3>
+                                <p>Gabriel García Márquez</p>
                             </div>
 
                         </div>
 
                     </label>
-
 
                     <!-- Libro 3 -->
                     <label class="libro">
@@ -132,20 +130,19 @@
                         >
 
                         <div class="informacion-libro">
-                            <div>
-                                <h3>
-                                    La Odisea
-                                </h3>
 
-                                <p>
-                                    Homero
-                                </p>
+                            <div class="portada">
+                                📖
+                            </div>
+
+                            <div>
+                                <h3>La Odisea</h3>
+                                <p>Homero</p>
                             </div>
 
                         </div>
 
                     </label>
-
 
                     <!-- Libro 4 -->
                     <label class="libro">
@@ -158,20 +155,18 @@
 
                         <div class="informacion-libro">
 
-                            <div>
-                                <h3>
-                                    Romeo y Julieta
-                                </h3>
+                            <div class="portada">
+                                📖
+                            </div>
 
-                                <p>
-                                    William Shakespeare
-                                </p>
+                            <div>
+                                <h3>Romeo y Julieta</h3>
+                                <p>William Shakespeare</p>
                             </div>
 
                         </div>
 
                     </label>
-
 
                     <!-- Libro 5 -->
                     <label class="libro">
@@ -184,20 +179,18 @@
 
                         <div class="informacion-libro">
 
-                            <div>
-                                <h3>
-                                    Coraline
-                                </h3>
+                            <div class="portada">
+                                📖
+                            </div>
 
-                                <p>
-                                    Neil Gaiman
-                                </p>
+                            <div>
+                                <h3>Coraline</h3>
+                                <p>Neil Gaiman</p>
                             </div>
 
                         </div>
 
                     </label>
-
 
                     <!-- Libro 6 -->
                     <label class="libro">
@@ -210,20 +203,18 @@
 
                         <div class="informacion-libro">
 
-                            <div>
-                                <h3>
-                                    Alicia en el País de las Maravillas
-                                </h3>
+                            <div class="portada">
+                                📖
+                            </div>
 
-                                <p>
-                                    Lewis Carroll
-                                </p>
+                            <div>
+                                <h3>Alicia en el País de las Maravillas</h3>
+                                <p>Lewis Carroll</p>
                             </div>
 
                         </div>
 
                     </label>
-
 
                     <!-- Libro 7 -->
                     <label class="libro">
@@ -235,37 +226,38 @@
                         >
 
                         <div class="informacion-libro">
-                            <div>
-                                <h3>
-                                    Los juegos del hambre
-                                </h3>
 
-                                <p>
-                                    Suzanne Collins
-                                </p>
+                            <div class="portada">
+                                📖
+                            </div>
+
+                            <div>
+                                <h3>Los juegos del hambre</h3>
+                                <p>Suzanne Collins</p>
                             </div>
 
                         </div>
 
                     </label>
 
-
                 </div>
 
             </section>
-
 
             <!-- Botón -->
             <button id="botonSolicitar">
                 Solicitar libros
             </button>
 
-
             <!-- Resultado -->
             <section
                 id="resultado-container"
                 class="resultado oculto"
             >
+
+                <div class="resultado-icono">
+                    ✅
+                </div>
 
                 <h2>
                     ¡Solicitud realizada!
@@ -283,7 +275,6 @@
 
         </main>
 
-
         <!-- Pie de página -->
         <footer>
 
@@ -299,9 +290,8 @@
 
     </div>
 
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    <!-- Archivo JavaScript -->
+    <script src="js/script.js"></script>
 
 </body>
 
